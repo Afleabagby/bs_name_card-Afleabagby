@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>名片作業</title>
+  <link rel="stylesheet" href="./bootstrap.css">
+  <style>
+    html,
+    body{
+      height:100vh;
+    }
+
+    .row{
+      height:100%;
+      justify-content:space-around;
+      align-items:stretch;
+    }
+
+    
+    /* 大尺寸另外寫媒體查詢 */
+    @media (min-width: 576px) {
+    
+    .row{
+      height:75%;
+      width:100%;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .card {
+      height:70%;
+      width:70%;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content:space-between;
+    }
+
+    }
+
+  </style>
+</head>
+<body class="vh-100">
+<div class="container h-100 d-flex justify-content-center align-items-center">
+
+  <div class="row d-flex">
+    <div class="card align-items-stretch" style="width: 100%;">
+      <img src="./小新.jpeg" class="card-img-top col-sm-5 p-0">
+      <div class="card-body bg-light col-sm-7 d-flex flex-column p-5">
+        <div class="basic mt-5 align-self-basline flex-fill">
+          <h5>春日部特攻隊隊員</h5>
+          <h1>野原新之助</h1>
+          <h3 class="mb-5">雙葉幼稚園</h3>
+        </div>
+        <div class="info mt-5">
+          <p class="card-text">
+            住址: 春日部市雙葉町（双葉町）904<br>
+            電話: 02-XXXXX-YYYY<br>
+            E-mail: shinchan@yay.com<br>
+            網站: <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
+
+</body>
+</html>
